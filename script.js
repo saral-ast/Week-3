@@ -8,7 +8,13 @@ console.log("Starting script.js");    // printing in console
 /* it is a multiple
   lie cometns
   works*/
- 
+
+alert("Hello world!") ;
+const resultPrommpt = prompt("What's Your Age",0) ;  // Prompt takes two values tile and default value
+    console.log(result) ;
+
+const result = confirm("Are you sure?") ;  // Confirm box if you click ok it returns true and if you click cancel it returns false 
+console.log(result) ;   
 
 
 let name = "Hello world!"
