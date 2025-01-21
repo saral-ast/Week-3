@@ -58,9 +58,30 @@ while(i < 3){
 
 
 //answer
-let numberValue = prompt("Enter a number greater than 100","");
+// let numberValue = prompt("Enter a number greater than 100","");
 
-while(numberValue <= 100 && numberValue != null){
-    numberValue = prompt("Enter a number greater than 100","");
+// while(numberValue <= 100 && numberValue != null){
+//     numberValue = prompt("Enter a number greater than 100","");
+// }
+// console.log(numberValue);
+
+
+//prime numbers printing
+
+let number = prompt("Enter a number greater than 1","");
+let primeNumber = true;
+
+for(let i = 2; i<=number; i++){
+    primeNumber = true;
+     for(let j = 2; j < i; j++){
+        if(i%j == 0){
+            primeNumber = false;
+            break
+        }
+        // console.log(i);
+    }
+    if(primeNumber){
+        console.log(i);
+    }
 }
-console.log(numberValue);
+
