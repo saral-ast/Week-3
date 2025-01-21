@@ -68,20 +68,40 @@ while(i < 3){
 
 //prime numbers printing
 
-let number = prompt("Enter a number greater than 1","");
-let primeNumber = true;
+// // let number = prompt("Enter a number greater than 1","");
+// let primeNumber = true;
 
-for(let i = 2; i<=number; i++){
-    primeNumber = true;
-     for(let j = 2; j < i; j++){
-        if(i%j == 0){
-            primeNumber = false;
-            break
-        }
-        // console.log(i);
-    }
-    if(primeNumber){
-        console.log(i);
-    }
+// for(let i = 2; i<=number; i++){
+//     primeNumber = true;
+//      for(let j = 2; j < i; j++){
+//         if(i%j == 0){
+//             primeNumber = false;
+//             break
+//         }
+//         // console.log(i);
+//     }
+//     if(primeNumber){
+//         // console.log(i);
+//     }
+// }
+
+
+
+let arg = parseInt(prompt("Enter a value?",12));
+alert(typeof arg);
+switch (arg) {
+  case '0':
+  case '1':
+    alert( 'One or zero' );
+    break;
+
+  case '2':
+    alert( 'Two' );
+    break;
+
+  case 3:
+    alert( 'Never executes!' );
+    break;
+  default:
+    alert( 'An unknown value' );
 }
-
