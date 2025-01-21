@@ -37,6 +37,30 @@ for(let i = 1; i <= 10; i++){
     // alert(!(i%2))
     if(/*!(i % 2)*/ i%2 == 0){
         // console.log(i);
-        alert(i);
+        // alert(i);
     }
 }
+
+let i =0;
+while(i < 3){
+    // console.log(i);
+    // alert(`number ${i}`);
+    i++;
+}
+
+
+
+// Write a loop which prompts for a number greater than 100. If the visitor enters another number – ask them to input again.
+
+// The loop must ask for a number until either the visitor enters a number greater than 100 or cancels the input/enters an empty line.
+
+// Here we can assume that the visitor only inputs numbers. There’s no need to implement a special handling for a non-numeric input in this task.
+
+
+//answer
+let numberValue = prompt("Enter a number greater than 100","");
+
+while(numberValue <= 100 && numberValue != null){
+    numberValue = prompt("Enter a number greater than 100","");
+}
+console.log(numberValue);
