@@ -87,21 +87,72 @@ while(i < 3){
 
 
 
-let arg = parseInt(prompt("Enter a value?",12));
-alert(typeof arg);
-switch (arg) {
-  case '0':
-  case '1':
-    alert( 'One or zero' );
-    break;
+// let arg = parseInt(prompt("Enter a value?",12));
+// alert(typeof arg);
+// switch (arg) {
+//   case '0':
+//   case '1':
+//     alert( 'One or zero' );
+//     break;
 
-  case '2':
-    alert( 'Two' );
-    break;
+//   case '2':
+//     alert( 'Two' );
+//     break;
 
-  case 3:
-    alert( 'Never executes!' );
-    break;
-  default:
-    alert( 'An unknown value' );
+//   case 3:
+//     alert( 'Never executes!' );
+//     break;
+//   default:
+//     alert( 'An unknown value' );
+// }
+
+
+// let a = +prompt('a?', '');
+// switch (a) {
+//     case 0:
+//         alert( 0 );
+//         break;
+//     case 1:
+//         alert( 1 );
+//         break;
+//     case 2:
+//     case 3:
+//         alert( '2,3' );
+//         break;
+//     default:
+// }
+
+
+// function showMessage(from, text = "no text given") {
+//     alert( from + ": " + text );
+//   }
+  
+//   showMessage("Ann",null); // Ann: no text given
+
+function checkAge(age) {
+    // age = age ?? prompt('How old are you?', 18);
+    if (age >= 18) {
+      return true;
+    } else {
+      return confirm('Do you have permission from your parents?');
+    }
 }
+function showMovie(age) {
+    if ( !checkAge(age) ) {
+      return;
+    }
+  
+    alert( "Showing you the movie" ); // (*)
+    // ...
+  }
+  showMovie();
+//    showMovie(17);
+
+
+ // error!
+
+let sayHi = function(name) {  // (*) no magic any more
+  alert( `Hello, ${name}` );
+};
+
+sayHi("John"); // Hello, John
