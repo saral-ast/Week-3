@@ -129,30 +129,50 @@ while(i < 3){
   
 //   showMessage("Ann",null); // Ann: no text given
 
-function checkAge(age) {
-    // age = age ?? prompt('How old are you?', 18);
-    if (age >= 18) {
-      return true;
-    } else {
-      return confirm('Do you have permission from your parents?');
-    }
-}
-function showMovie(age) {
-    if ( !checkAge(age) ) {
-      return;
-    }
+// function checkAge(age) {
+//     // age = age ?? prompt('How old are you?', 18);
+//     if (age >= 18) {
+//       return true;
+//     } else {
+//       return confirm('Do you have permission from your parents?');
+//     }
+// }
+// function showMovie(age) {
+//     if ( !checkAge(age) ) {
+//       return;
+//     }
   
-    alert( "Showing you the movie" ); // (*)
-    // ...
-  }
-  showMovie();
-//    showMovie(17);
+//     alert( "Showing you the movie" ); // (*)
+//     // ...
+//   }
+//   showMovie();
+// //    showMovie(17);
 
 
- // error!
+//  // error!
 
-let sayHi = function(name) {  // (*) no magic any more
-  alert( `Hello, ${name}` );
-};
+// let sayHi = function(name) {  // (*) no magic any more
+//   alert( `Hello, ${name}` );
+// };
 
-sayHi("John"); // Hello, John
+// sayHi("John"); // Hello, John
+
+let age = prompt("What is your age?", 18);
+
+let welcome;
+
+if (age < 18) {
+
+  welcome = function() {
+    alert("Hello!");
+  };
+
+} else {
+
+  welcome = function() {
+    alert("Greetings!");
+  };
+
+}
+
+welcome(); // ok now
