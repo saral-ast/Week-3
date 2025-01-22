@@ -74,3 +74,12 @@ function filterRangeInPlace(arr, a, b) {
         }
     }
 }
+
+
+function saral(){
+    if(true){
+        let a = 10
+        console.log(a)
+    }
+}
+console.log(a)
