@@ -6,9 +6,65 @@
     <title>Document</title>
     <!-- <script src="./script.js"></script> -->
     <!-- <script src="./scrpit2.js"></script> -->
-    <script src="./practice3.js"></script>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./practice5.js"></script>
+   
 </head>
 <body>
-    <h1>Hello ArsenalTech</h1>
+    <h1 id="header1" style="color: aqua; background-color:black"> Hello ArsenalTech</h1>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <div id="content">
+        <h2>Content</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit </p>
+    </div>
+    <form action="" id="form">
+        <label for="name">Name:</label>
+        <input type="text" name="name" id="name">
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email">
+        <input type="submit"  id="submit" value="Submit">
+
+    </form>
+
+    <footer>
+        <p>&copy; 2020 ArsenalTech</p>
+    </footer>
+    <!-- <script>
+        for (let i = 0; i < document.body.childNodes.length; i++) {
+            alert( document.body.childNodes[i] ); // Text, DIV, Text, UL, ..., SCRIPT
+          }
+    </script> -->
+    <script>
+        
+
+
+console.log( "hi" ); // NodeList(9) [text, div, text, ul, text, div, text, script, text]
+// for (let i = 0; i < document.body.childNodes.length; i++) {
+//     console.log( document.body.childNodes[i] ); // Text, DIV, Text, UL, ..., SCRIPT
+// }
+
+
+setTimeout(() => {
+    let header = document.getElementById( "header1" );
+    header.style.backgroundColor = 'red';
+    header.style.color = 'white'; 
+
+},1000)
+
+
+let submit = document.getElementById('submit');
+submit.addEventListener('click', function(event){
+    event.preventDefault();
+    let data = document.forms.form ;
+    console.log(data)
+    console.log(data.name.value)
+})
+    </script>
 </body>
 </html>
